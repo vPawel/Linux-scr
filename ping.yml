@@ -5,7 +5,7 @@
     tasks:
 
     - name: "just execute a ls -lrt command"
-      shell: "ping -n4 8.8.8.8"
+      shell: "ping -c 4 8.8.8.8"
       register: "output"
 
     - debug: var=output.stdout_lines
