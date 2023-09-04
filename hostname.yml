@@ -3,8 +3,8 @@
     connection: local
     tasks:
 
-    - name: "just execute a ls command"
-      shell: "ls -la /"
+    - name: "just execute a hostname command"
+      shell: "hostname"
       register: "output"
 
     - debug: var=output.stdout_lines
