@@ -1,5 +1,6 @@
 ---
   - name: "Playing with Ansible"
+    hosts: localhost
     connection: local
     tasks:
 
