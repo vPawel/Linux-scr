@@ -1,9 +1,7 @@
 ---
   - name: "Playing with Ansible"
-    hosts: localhost
-    connection: local
+    hosts: all
     tasks:
-
     - name: "just execute a hostname command"
       shell: "hostname"
       register: "output"
