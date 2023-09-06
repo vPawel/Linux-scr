@@ -1,11 +1,6 @@
 ---
-  - name: "Playing with Ansible"
-    hosts: localhost
-    connection: local
-    tasks:
-
-    - name: "just execute a ls command"
-      shell: "ls -la /"
-      register: "output"
-
-    - debug: var=output.stdout_lines
+- name: Check connectivity to remote servers
+  hosts: all #servergroup01
+  tasks:
+    - name: ping
+      ping:
